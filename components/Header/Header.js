@@ -14,11 +14,7 @@ const Header = () => {
           property='og:url'
           content=''
         />
-        
-<<<<<<< HEAD
-        <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" />
-=======
->>>>>>> parent of db3eea5 (first commit)
+
         <meta property='og:type' content='website' />
         <meta property='og:title' content='JNTUH Results' />
         <meta name='twitter:card' content='summary' />
@@ -27,21 +23,13 @@ const Header = () => {
           property='og:description'
           content='You can find the Results of your entire B Tech semesters here of Jawaharlal Nehru Technological University, Hyderabad (JNTUH).'
         />
-        
+
         <meta property="twitter:description" content="JNTUH Results, JNTUH B.Tech Results, JNTUH Results Enginnering, JNTUH Engineering Results "></meta>
         <meta
           property='og:image'
           content={
             ''}
         />
-        <link
-		  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-		  rel="stylesheet"
-		/>
-		<link
-		  href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.0.0/mdb.min.css"
-		  rel="stylesheet"
-		/>
 
         <script
           dangerouslySetInnerHTML={{
@@ -72,7 +60,6 @@ const Header = () => {
         window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}
           gtag('js', new Date());
-
           gtag('config', 'G-6CR1W425NE');
         `}
       </Script>
