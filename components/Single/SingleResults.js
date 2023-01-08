@@ -150,7 +150,7 @@ const SingleResults = ({ query }) => {
             </>
           }
         })}
-		<h2 align="center" style={{color:"red",fontWeight:"bold"}}><a href="http://www.instagram.com/sayikumarr/"> click here to contact Admin </a></h2>
+		<h2 align="center" style={{color:"red",fontWeight:"bold"}}><a href="http://www.instagram.com/sayikumarr/"> click here to contact Admin </a></h2><br/>
     <h1 className="mt-1 block text-left mx-[12%] text-center mb-4 text-[65%] sm:text-[100%]">
             Made with ❤ by &nbsp;
             <Link href="https://github.com/Sayikumarr/" >
@@ -159,8 +159,6 @@ const SingleResults = ({ query }) => {
                 </a>
             </Link>
         </h1>
-        <div><button onClick="window.print()">Print
-</button></div>
        </div>
       </div>
     </>
