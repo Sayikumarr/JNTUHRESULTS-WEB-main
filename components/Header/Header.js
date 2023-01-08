@@ -14,7 +14,7 @@ const Header = () => {
           property='og:url'
           content=''
         />
-
+        <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" />
         <meta property='og:type' content='website' />
         <meta property='og:title' content='JNTUH Results' />
         <meta name='twitter:card' content='summary' />
