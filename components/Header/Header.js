@@ -14,6 +14,10 @@ const Header = () => {
           property='og:url'
           content=''
         />
+        <link
+		  href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.0.0/mdb.min.css"
+		  rel="stylesheet"
+		/>
         <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" />
         <meta property='og:type' content='website' />
         <meta property='og:title' content='JNTUH Results' />

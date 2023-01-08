@@ -159,6 +159,8 @@ const SingleResults = ({ query }) => {
                 </a>
             </Link>
         </h1>
+        <div><button onClick="window.print()">Print
+        </button></div>
       </div>
       </div>
     </>
