@@ -15,7 +15,10 @@ const Header = () => {
           content=''
         />
         
+<<<<<<< HEAD
         <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" />
+=======
+>>>>>>> parent of db3eea5 (first commit)
         <meta property='og:type' content='website' />
         <meta property='og:title' content='JNTUH Results' />
         <meta name='twitter:card' content='summary' />
