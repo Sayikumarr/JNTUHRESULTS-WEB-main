@@ -1,10 +1,65 @@
 
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Link from "next/link";
+
+
 
 const SingleResults = ({ query }) => {
   const Results = query['Results'];
   const Details = query['Details'];
+
+  useEffect(() => {
+    var tables = document.getElementsByTagName("table");
+    for (var t = 0; t < tables.length; t++) {
+      var table = tables[t];
+
+      var rows = table.getElementsByTagName('tr');
+
+      for (var i = rows.length - 1; i >= 0; i--) {
+        var row = rows[i];
+        var cells = row.getElementsByTagName('th');
+
+        var isEmptyRow = true;
+
+        for (var j = 0; j < cells.length; j++) {
+          if (cells[j].innerText.trim() !== '') {
+            isEmptyRow = false;
+            break;
+          }
+        }
+
+        if (isEmptyRow) {
+          row.parentNode.removeChild(row);
+        }
+      }
+
+      var cells = table.getElementsByTagName('th');
+
+      for (var j = cells.length - 1; j >= 0; j--) {
+        var cell = cells[j];
+        var columnIndex = cell.cellIndex;
+        var isEmptyColumn = true;
+
+        for (var i = 0; i < rows.length; i++) {
+          var row = rows[i];
+          var currentCell = row.cells[columnIndex];
+
+          if (currentCell.innerText.trim() !== '') {
+            isEmptyColumn = false;
+            break;
+          }
+        }
+
+        if (isEmptyColumn) {
+          for (var i = 0; i < rows.length; i++) {
+            var row = rows[i];
+            row.deleteCell(columnIndex);
+          }
+        }
+      }
+    }
+  }, []);
+
   const print = () => {
     setDisplay("hidden")
     setTimeout(function () {
