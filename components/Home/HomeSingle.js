@@ -16,7 +16,7 @@ const HomeSingle = ({ homepage }) => {
       homepage(<Loading />)
       try
       {
-        const response = await axios.get(url+'/api/single?htno=' + htno, { mode: 'cors' });
+        const response = await axios.get(url+'/api/singleU?htno=' + htno, { mode: 'cors' });
         
         // console.log(response.status)
         if (response.status == 500) {
