@@ -1,4 +1,4 @@
-const url = "https://jntuhresults.up.railway.app";
+const url = "https://www.drsanjaysrirampur.com/jntuhapiserver";
 const urlr = "https://jntuhfastresultserver.herokuapp.com/";
 
 export default url;
