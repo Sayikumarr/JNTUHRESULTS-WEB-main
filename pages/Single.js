@@ -10,7 +10,7 @@ export default single;
 
 export async function getServerSideProps(context) {
     const htno = context.query.htno;
-    const response = await axios.get(url + '/api/singleU?htno=' + htno);
+    const response = await axios.get(url + '/api/academicresult?htno=' + htno);
     var fs = require('fs');
 
     // Use readFileSync() method
